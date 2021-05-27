@@ -1,49 +1,75 @@
-*{box-sizing: border-box;
-       user-select: none;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-       }
-
-body,html{/*margin: 10% 20%;*/
-          padding: 0;}
-
-header{text-align: center;
-       font-weight: bold;
-       font-size: 30px;
-       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+:root{
+       --font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-input{ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+* {
+       box-sizing: border-box;
+       user-select: none;
+       -webkit-user-select: none;
+       -moz-user-select: none;
+       -ms-user-select: none;
+}
+
+body,
+html {
+       
+       padding: 0;
+}
+
+.header {
+       text-align: center;
+       font-weight: bold;
+       font-size: 3rem;
+       font-family: var(--font-family); 
+}
+
+input {
+       font-family: var(--font-family);
        font-size: 17px;
        margin: 5px 43%;
        width: 100px;
-       border-radius: 5px ;
+       border-radius: 5px;
        background-color: dodgerblue;
        cursor: pointer;
-       padding: 5px ;}
+       padding: 5px;
+}
 
-input:hover{background-color: firebrick;
-            font-size: 20px;
-            width: 106px;
-            }
+input:hover {
+       background-color: firebrick;
+       font-size: 2rem;
+       width: 8vw;
+}
 
-#numberOfClicks{color: darksalmon;}
+#numberOfClicks {
+       color: darksalmon;
+}
 
-.overAllContainer{text-align: center;}
+.overAllContainer {
+       text-align: center;
+}
 
-.container{display: flex;
-       margin: 0 20%;}
+.container {
+       display: flex;
+       margin: 0 20%;
+}
 
-.card{display: block;
-       width: 75px;
-       height: 150px;
+.card {
+       display: block;
+       width: clamp(70%,45vh,150vw);
+       min-height: 20vh;
        background-color: orangered;
-       margin: 7px;
+       margin: 0.5vw;
        cursor: pointer;
-       padding: 38px 5px;
-       font-size:45px ; }
+       padding: 5vh;
+       font-size: 3rem;
+       text-align: center;
+       
+}
 
-.card:hover{background-color: grey;}
+.card:hover {
+       background-color: grey;
+}
 
-#selectedCard{opacity: 0.5;}
-
+#selectedCard {
+       opacity: 0.5;
+}
